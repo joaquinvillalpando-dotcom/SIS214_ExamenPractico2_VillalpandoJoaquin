@@ -1,0 +1,140 @@
+.encabezado {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    isolation: isolate;
+    border-bottom: 1px solid var(--border-color);
+    background: color-mix(in srgb, var(--bg-color) 88%, transparent);
+    backdrop-filter: blur(20px);
+}
+
+.encabezado::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--primary-color));
+}
+
+.navegacion {
+    min-height: 4.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.85rem;
+    position: relative;
+}
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+.marca_texto {
+    display: block;
+    min-width: 0;
+}
+
+.menu_principal {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    inset-inline: 0;
+    display: none;
+    gap: 0.2rem;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--surface-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.menu_principal.menu_abierto {
+    display: grid;
+}
+
+.hero {
+    padding-block: 3.4rem 4.4rem;
+    overflow: clip;
+}
+
+.hero_contenido {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero_texto {
+    min-width: 0;
+    align-self: center;
+}
+
+.hero_visual {
+    position: relative;
+    width: min(100%, 29rem);
+    margin-inline: auto;
+    min-width: 0;
+}
+
+.rejilla_perfil,
+.rejilla_habilidades,
+.rejilla_trayectoria,
+.rejilla_multimedia,
+.contacto_layout {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.cabecera_seccion {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: end;
+}
+
+.cabecera_seccion > div,
+.cabecera_seccion > p {
+    min-width: 0;
+}
+
+.cabecera_seccion > p {
+    max-width: 39rem;
+}
+
+.rejilla_proyectos,
+.rejilla_certificaciones,
+.repos_api {
+    display: grid;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.controles_proyectos {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.github_contenido {
+    display: grid;
+    gap: 1.5rem;
+    min-width: 0;
+}
+
+.github_perfil {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.github_perfil .boton {
+    grid-column: 1 / -1;
+}
+
+.pie_contenido {
+    display: grid;
+    gap: 1.3rem;
+}

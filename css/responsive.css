@@ -1,0 +1,265 @@
+@media (max-width: 420px) {
+    .contenedor {
+        width: min(calc(100% - 1.25rem), var(--max-width));
+    }
+
+    .marca_texto strong {
+        max-width: 7.5rem;
+        font-size: 0.75rem;
+    }
+
+    .marca_texto small,
+    .texto_tema {
+        display: none;
+    }
+
+    .boton_tema {
+        width: 2.65rem;
+        padding: 0.5rem;
+    }
+
+    .hero {
+        padding-top: 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 13vw, 3.4rem);
+    }
+
+    .hero_metricas {
+        gap: 0.45rem;
+    }
+
+    .hero_metricas span {
+        font-size: 0.66rem;
+    }
+
+    .tarjeta_estado {
+        right: 0;
+        left: 0;
+        width: max-content;
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    .filtros_proyectos button {
+        padding: 0.5rem 0.65rem;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+    .hero h1 {
+        font-size: clamp(3rem, 10vw, 4.25rem);
+    }
+
+    .hero_visual {
+        width: min(86%, 26rem);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor {
+        width: min(calc(100% - 3rem), var(--max-width));
+    }
+
+    .navegacion {
+        gap: 1rem;
+    }
+
+    .marca_texto strong {
+        max-width: 12rem;
+    }
+
+    .texto_tema {
+        display: inline;
+    }
+
+    .hero {
+        padding-block: 4rem 5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.25rem, 5.5vw, 4rem);
+    }
+
+    .hero_contenido {
+        gap: 2.5rem;
+    }
+
+    .hero_visual {
+        width: min(100%, 24rem);
+    }
+
+    .rejilla_perfil,
+    .rejilla_habilidades,
+    .rejilla_trayectoria,
+    .contacto_layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+    }
+
+    .tarjeta_audio {
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 1.35fr);
+        column-gap: 1.5rem;
+    }
+
+    .tarjeta_audio figcaption {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .tarjeta_audio p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .tarjeta_audio audio {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        margin-top: 0;
+    }
+
+    .rejilla_proyectos,
+    .rejilla_certificaciones {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .repos_api {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cabecera_seccion {
+        grid-template-columns: minmax(0, 1.15fr) minmax(14rem, 0.85fr);
+    }
+
+    .controles_proyectos {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .github_perfil {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+    }
+
+    .github_perfil .boton {
+        grid-column: auto;
+    }
+
+    .pie_contenido {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .contenedor {
+        width: min(calc(100% - 4rem), var(--max-width));
+    }
+
+    .seccion {
+        padding-block: 4.9rem;
+    }
+
+    .navegacion {
+        gap: 1.3rem;
+    }
+
+    .boton_menu {
+        display: none;
+    }
+
+    .menu_principal {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.12rem;
+        flex: 1;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu_principal a {
+        padding: 0.55rem 0.62rem;
+        font-size: 0.79rem;
+    }
+
+    .hero {
+        padding-block: 5rem 3.25rem;
+    }
+
+    .hero_contenido {
+        grid-template-columns: minmax(0, 1.12fr) minmax(21rem, 0.88fr);
+        gap: 5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.7rem, 4.8vw, 4.7rem);
+    }
+
+    .hero_visual {
+        width: min(100%, 28rem);
+    }
+
+    .rejilla_perfil {
+        grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+        gap: 1.5rem;
+    }
+
+    .rejilla_habilidades,
+    .rejilla_trayectoria,
+    .contacto_layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+
+    .rejilla_proyectos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rejilla_certificaciones {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .repos_api {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cabecera_seccion {
+        grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+    }
+
+    .controles_proyectos {
+        grid-template-columns: minmax(18rem, 1fr) auto;
+        align-items: center;
+    }
+
+    .github_perfil {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+    }
+
+    .github_perfil .boton {
+        grid-column: auto;
+    }
+
+    .fortalezas dl {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .pie_contenido {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero_contenido {
+        gap: 6.5rem;
+    }
+
+    .foto_principal_marco {
+        aspect-ratio: 0.9;
+    }
+}

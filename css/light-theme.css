@@ -1,0 +1,385 @@
+/* Un tema luminoso con identidad propia. */
+
+html[data-theme="light"] body {
+    background: radial-gradient(ellipse at 8% 9%, rgba(89, 125, 255, 0.10), transparent 34rem),
+        radial-gradient(ellipse at 94% 42%, rgba(252, 63, 176, 0.055), transparent 36rem),
+        var(--bg-color);
+}
+
+html[data-theme="light"] .encabezado {
+    background: rgba(255, 255, 255, 0.91);
+    border-bottom: 1px solid #e4e9f6;
+    box-shadow: 0 3px 18px rgba(43, 64, 133, 0.035);
+}
+
+html[data-theme="light"] .encabezado::before {
+    height: 3px;
+    background: linear-gradient(90deg, #354fff, #00c5ff 54%, #fe4aad);
+}
+
+html[data-theme="light"] .marca_monograma {
+    background: linear-gradient(135deg, #304dff, #7960ff);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(48, 77, 255, 0.18);
+}
+
+html[data-theme="light"] .boton_tema,
+html[data-theme="light"] .boton_menu {
+    border-color: #cfd9f5;
+    background: #f2f5ff;
+    color: #2543da;
+}
+
+html[data-theme="light"] .boton_tema:hover,
+html[data-theme="light"] .boton_menu:hover {
+    border-color: #647cfa;
+    background: #e9edff;
+}
+
+html[data-theme="light"] .menu_principal a:hover,
+html[data-theme="light"] .menu_principal a:focus-visible {
+    background: #edf0ff;
+    color: #304dff;
+}
+
+html[data-theme="light"] .hero {
+    position: relative;
+    isolation: isolate;
+    padding-block: 5.2rem 5.7rem;
+    border-bottom: 1px solid #e0e6f7;
+    background: radial-gradient(circle at 87% 18%, rgba(114, 164, 255, 0.23), transparent 24rem),
+        radial-gradient(circle at 30% 80%, rgba(251, 103, 193, 0.10), transparent 25rem),
+        linear-gradient(135deg, #ffffff 4%, #f2f5ff 65%, #eaf4ff);
+}
+
+html[data-theme="light"] .hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: linear-gradient(rgba(56, 83, 184, 0.038) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 83, 184, 0.038) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: linear-gradient(to right, transparent, #000 90%);
+    pointer-events: none;
+}
+
+html[data-theme="light"] .hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 22rem;
+    height: 22rem;
+    right: -11rem;
+    bottom: -10rem;
+    border-radius: 50%;
+    border: 5rem solid rgba(65, 91, 255, 0.055);
+    pointer-events: none;
+}
+
+html[data-theme="light"] .eyebrow {
+    color: #304dff;
+}
+
+html[data-theme="light"] .hero h1 {
+    color: #111a37;
+}
+
+html[data-theme="light"] .hero h1 span {
+    background: linear-gradient(100deg, #2e4dff, #7048f4 75%, #dc3d9a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+html[data-theme="light"] .hero_bajada {
+    color: #293954;
+}
+
+html[data-theme="light"] .hero_descripcion,
+html[data-theme="light"] .hero_metricas span {
+    color: #61708a;
+}
+
+html[data-theme="light"] .hero_metricas li {
+    border-color: #cfd8ee;
+}
+
+html[data-theme="light"] .hero_metricas strong {
+    color: #1e2b4d;
+}
+
+html[data-theme="light"] .hero .boton_primario {
+    border-color: #304dff;
+    background: #304dff;
+    color: #ffffff;
+    box-shadow: 0 14px 30px rgba(48, 77, 255, 0.23);
+}
+
+html[data-theme="light"] .hero .boton_primario:hover {
+    background: #1835e3;
+    box-shadow: 0 18px 36px rgba(48, 77, 255, 0.30);
+}
+
+html[data-theme="light"] .hero .boton_secundario {
+    border-color: #aebde1;
+    background: rgba(255, 255, 255, 0.76);
+    color: #263657;
+}
+
+html[data-theme="light"] .hero .boton_secundario:hover {
+    background: #ffffff;
+    border-color: #304dff;
+    color: #304dff;
+}
+
+html[data-theme="light"] .foto_principal_marco {
+    border: 2px solid #f7f8ff;
+    background: #dde8ff;
+    box-shadow: 0 24px 55px rgba(54, 75, 135, 0.17),
+        0 0 0 7px rgba(255, 255, 255, 0.72);
+}
+
+html[data-theme="light"] .foto_principal_marco::before {
+    border: 0;
+    background: linear-gradient(145deg, #3354ff, #00c6f8 55%, #f84caf);
+    box-shadow: 0 14px 28px rgba(67, 91, 238, 0.18);
+    inset: 1.1rem -1rem -1rem 1.1rem;
+}
+
+html[data-theme="light"] .foto_principal_marco::after {
+    background: linear-gradient(135deg, #aebcff, #f8a4df);
+    opacity: 0.42;
+}
+
+html[data-theme="light"] .foto_principal_marco img {
+    filter: saturate(0.99);
+}
+
+html[data-theme="light"] .foto_principal_marco figcaption {
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #283454;
+    box-shadow: 0 8px 22px rgba(25, 40, 109, 0.13);
+}
+
+html[data-theme="light"] .tarjeta_estado {
+    border: 1px solid #cfdaff;
+    background: #ffffff;
+    color: #1f3158;
+    box-shadow: 0 15px 40px rgba(45, 73, 164, 0.16);
+}
+
+html[data-theme="light"] .tarjeta_estado span {
+    background: #16b67f;
+    box-shadow: 0 0 0 5px rgba(22, 182, 127, 0.14);
+}
+
+html[data-theme="light"] .tarjeta,
+html[data-theme="light"] .tarjeta_certificacion,
+html[data-theme="light"] .tarjeta_media,
+html[data-theme="light"] .github_panel,
+html[data-theme="light"] .idiomas_panel,
+html[data-theme="light"] .formulario_tarjeta,
+html[data-theme="light"] .tarjeta_proyecto,
+html[data-theme="light"] .panel_habilidad {
+    border-color: #dce4f6;
+    background: #ffffff;
+    box-shadow: 0 12px 32px rgba(42, 63, 132, 0.055);
+}
+
+html[data-theme="light"] .tarjeta_principal {
+    border-top: 3px solid #3457ff;
+}
+
+html[data-theme="light"] .perfil_resumen {
+    background: linear-gradient(160deg, #f1f4ff, #ffffff 75%);
+    border-top: 3px solid #b69aff;
+}
+
+html[data-theme="light"] .perfil_resumen address span {
+    color: #425fff;
+}
+
+html[data-theme="light"] .fortalezas dl div {
+    background: #f5f7ff;
+    border-color: #e2e8fa;
+}
+
+html[data-theme="light"] .cita {
+    border-left-color: #7159f7;
+}
+
+html[data-theme="light"] .seccion_contraste {
+    --primary-color: #304dff;
+    --primary-strong: #173be4;
+    --surface-color: #ffffff;
+    --surface-soft: #eef1ff;
+    --surface-strong: #dce4ff;
+    --bg-elevated: #eff3ff;
+    --text-color: #171e36;
+    --text-muted: #586780;
+    --text-inverse: #ffffff;
+    --border-color: #d4def7;
+    --border-strong: #aebfea;
+    border-color: #dde5ff;
+    background: radial-gradient(circle at 90% 10%, rgba(120, 107, 255, 0.12), transparent 27rem),
+        linear-gradient(130deg, #f0f4ff, #e8f8ff 85%);
+}
+
+html[data-theme="light"] .seccion_contraste .cabecera_seccion p,
+html[data-theme="light"] .seccion_contraste .lista_checks li {
+    color: #546783;
+}
+
+html[data-theme="light"] .seccion_contraste .numero_seccion,
+html[data-theme="light"] .numero_seccion {
+    color: #3450eb;
+}
+
+html[data-theme="light"] .seccion_contraste .panel_habilidad {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #cfdbf8;
+    box-shadow: 0 15px 30px rgba(60, 80, 155, 0.06);
+}
+
+html[data-theme="light"] .seccion_contraste .panel_habilidad h3 {
+    color: #172544;
+}
+
+html[data-theme="light"] .seccion_contraste .nube_etiquetas li {
+    border-color: #cfd9fd;
+    background: #e8edff;
+    color: #2d4094;
+}
+
+html[data-theme="light"] .seccion_contraste .lista_progreso progress {
+    background: #e0e7fa;
+}
+
+html[data-theme="light"] .seccion_contraste .lista_progreso progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #3450ff, #00bbf8);
+}
+
+html[data-theme="light"] .seccion_contraste .lista_progreso progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #3450ff, #00bbf8);
+}
+
+html[data-theme="light"] .seccion_github {
+    background: radial-gradient(circle at 9% 80%, rgba(67, 125, 255, 0.09), transparent 23rem),
+        #fbfcff;
+}
+
+html[data-theme="light"] .seccion_github .github_panel {
+    --primary-color: #304dff;
+    --primary-strong: #173be4;
+    --surface-color: #ffffff;
+    --surface-soft: #edf2ff;
+    --bg-elevated: #f1f5ff;
+    --text-color: #162344;
+    --text-muted: #53627f;
+    --text-inverse: #ffffff;
+    --border-color: #d9e4fc;
+    background: #ffffff;
+    border: 1px solid #d6e3fc;
+    box-shadow: 0 20px 45px rgba(38, 68, 137, 0.07);
+}
+
+html[data-theme="light"] .seccion_github .github_panel h3,
+html[data-theme="light"] .seccion_github .github_panel h4,
+html[data-theme="light"] .seccion_github .github_panel strong {
+    color: #192c50;
+}
+
+html[data-theme="light"] .seccion_github .repo_api {
+    border: 1px solid #dce5fc;
+    background: #f4f7ff;
+}
+
+html[data-theme="light"] .tarjeta_proyecto:hover {
+    border-color: #a7b7ff;
+    box-shadow: 0 18px 43px rgba(48, 77, 255, 0.13);
+}
+
+html[data-theme="light"] .proyecto_visual {
+    background: radial-gradient(circle at 85% 18%, rgba(245, 57, 165, 0.18), transparent 13rem),
+        linear-gradient(135deg, #e9efff, #f1f5ff 55%, #e9f9ff);
+}
+
+html[data-theme="light"] .proyecto_visual code {
+    color: #304dff;
+    text-shadow: 0 6px 26px rgba(48, 77, 255, 0.12);
+}
+
+html[data-theme="light"] .filtros_proyectos button.filtro_activo {
+    background: #304dff;
+    border-color: #304dff;
+    color: #ffffff;
+}
+
+html[data-theme="light"] .filtros_proyectos button:hover {
+    border-color: #7589ff;
+}
+
+html[data-theme="light"] .idiomas_panel {
+    background: #f7f9ff;
+}
+
+html[data-theme="light"] .seccion_suave {
+    background: linear-gradient(150deg, #f5f7ff, #ffffff);
+}
+
+html[data-theme="light"] .seccion_contacto {
+    border-top: 1px solid #dfe6fa;
+    background: radial-gradient(circle at 5% 6%, rgba(117, 117, 255, 0.12), transparent 24rem),
+        radial-gradient(circle at 95% 95%, rgba(0, 185, 237, 0.12), transparent 21rem),
+        linear-gradient(140deg, #edf1ff, #f9fbff);
+}
+
+html[data-theme="light"] .contacto_intro h2 {
+    color: #1d2f63;
+}
+
+html[data-theme="light"] .formulario_tarjeta {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #cfd9f1;
+}
+
+html[data-theme="light"] .formulario_tarjeta input:not([type="checkbox"]),
+html[data-theme="light"] .formulario_tarjeta textarea {
+    background: #f8faff;
+}
+
+html[data-theme="light"] .formulario_tarjeta input:focus,
+html[data-theme="light"] .formulario_tarjeta textarea:focus {
+    box-shadow: 0 0 0 3px rgba(48, 77, 255, 0.13);
+}
+
+html[data-theme="light"] .boton_primario {
+    background: #304dff;
+    color: #ffffff;
+}
+
+html[data-theme="light"] .boton_primario:hover {
+    background: #1c36df;
+}
+
+html[data-theme="light"] .boton_secundario {
+    color: #26418b;
+}
+
+html[data-theme="light"] .pie_pagina {
+    border-top-color: #dce5fa;
+    background: #ffffff;
+}
+
+@media (max-width: 767px) {
+    html[data-theme="light"] .hero {
+        padding-block: 3.6rem 5.1rem;
+    }
+
+    html[data-theme="light"] .menu_principal {
+        background: #ffffff;
+        box-shadow: 0 18px 40px rgba(46, 65, 137, 0.18);
+    }
+}

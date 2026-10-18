@@ -1,0 +1,198 @@
+/* Contraste negro y verde neón. */
+
+html[data-theme="dark"] body {
+    background: radial-gradient(ellipse at 94% 18%, rgba(112, 255, 46, 0.09), transparent 32rem),
+        radial-gradient(ellipse at 0 48%, rgba(35, 231, 173, 0.055), transparent 32rem),
+        #060908;
+}
+
+html[data-theme="dark"] .encabezado {
+    background: rgba(5, 9, 6, 0.92);
+    border-bottom-color: #29432b;
+}
+
+html[data-theme="dark"] .encabezado::before {
+    height: 3px;
+    background: linear-gradient(90deg, #81fb32, #b7ff38 57%, #35ffd3);
+    box-shadow: 0 0 24px rgba(165, 255, 61, 0.35);
+}
+
+html[data-theme="dark"] .marca_monograma {
+    background: linear-gradient(135deg, #c5ff51, #5cefa1);
+    color: #071007;
+    box-shadow: 0 0 26px rgba(148, 255, 51, 0.18);
+}
+
+html[data-theme="dark"] .hero {
+    position: relative;
+    isolation: isolate;
+    padding-block: 5.3rem 5.8rem;
+    background: radial-gradient(ellipse at 83% 44%, rgba(143, 255, 52, 0.12), transparent 29rem),
+        radial-gradient(ellipse at 9% 95%, rgba(28, 236, 171, 0.07), transparent 22rem),
+        linear-gradient(125deg, #040604, #08110a 72%, #07110b);
+    border-bottom: 1px solid #283c27;
+}
+
+html[data-theme="dark"] .hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: linear-gradient(rgba(181, 255, 82, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(181, 255, 82, 0.035) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: linear-gradient(to right, transparent 25%, #000);
+    pointer-events: none;
+}
+
+html[data-theme="dark"] .hero::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 25rem;
+    height: 25rem;
+    right: -14rem;
+    top: -8rem;
+    border: 1px solid rgba(172, 255, 67, 0.16);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4rem rgba(131, 255, 52, 0.018),
+        0 0 0 8rem rgba(131, 255, 52, 0.01);
+    pointer-events: none;
+}
+
+html[data-theme="dark"] .hero h1 {
+    letter-spacing: -0.068em;
+    text-shadow: 0 6px 30px rgba(0, 0, 0, 0.28);
+}
+
+html[data-theme="dark"] .hero h1 span {
+    color: #b7ff38;
+    text-shadow: 0 0 48px rgba(139, 255, 55, 0.18);
+}
+
+html[data-theme="dark"] .eyebrow {
+    color: #c0ff58;
+}
+
+html[data-theme="dark"] .hero .boton_primario {
+    background: #b7ff38;
+    color: #09130a;
+    border-color: #b7ff38;
+    box-shadow: 0 12px 34px rgba(163, 255, 48, 0.20);
+}
+
+html[data-theme="dark"] .hero .boton_primario:hover {
+    background: #d4ff86;
+    box-shadow: 0 16px 40px rgba(163, 255, 48, 0.3);
+}
+
+html[data-theme="dark"] .hero .boton_secundario {
+    border-color: #45664a;
+    background: rgba(14, 25, 17, 0.72);
+}
+
+html[data-theme="dark"] .foto_principal_marco {
+    border: 2px solid rgba(184, 255, 53, 0.65);
+    background: #121b14;
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55),
+        0 0 45px rgba(152, 255, 66, 0.08);
+}
+
+html[data-theme="dark"] .foto_principal_marco::before {
+    border: 2px solid #a6ff34;
+    background: #101b0b;
+    inset: 1.2rem -1rem -1rem 1.2rem;
+    box-shadow: 0 0 30px rgba(147, 255, 45, 0.09);
+}
+
+html[data-theme="dark"] .tarjeta_estado {
+    border-color: #6f9e4a;
+    background: #111b12;
+    color: #edffe0;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
+}
+
+html[data-theme="dark"] .tarjeta,
+html[data-theme="dark"] .panel_habilidad,
+html[data-theme="dark"] .tarjeta_proyecto,
+html[data-theme="dark"] .github_panel,
+html[data-theme="dark"] .tarjeta_certificacion,
+html[data-theme="dark"] .tarjeta_media,
+html[data-theme="dark"] .formulario_tarjeta,
+html[data-theme="dark"] .idiomas_panel {
+    border-color: #2a422e;
+    background: linear-gradient(155deg, #101812, #0b110d);
+}
+
+html[data-theme="dark"] .tarjeta_principal {
+    border-top: 3px solid #adff44;
+}
+
+html[data-theme="dark"] .perfil_resumen {
+    border-top: 3px solid #50e9b0;
+    background: linear-gradient(145deg, #172418, #0d150f);
+}
+
+html[data-theme="dark"] .seccion_contraste {
+    background: radial-gradient(ellipse at 88% 24%, rgba(154, 255, 53, 0.07), transparent 30rem),
+        linear-gradient(120deg, #081009, #0e1c10);
+    border-color: #2a4929;
+}
+
+html[data-theme="dark"] .seccion_contraste .panel_habilidad {
+    background: linear-gradient(135deg, #172519, #101911);
+    border-color: #355238;
+}
+
+html[data-theme="dark"] .seccion_github .github_panel {
+    border-color: #41633a;
+    box-shadow: inset 0 1px 0 rgba(175, 255, 75, 0.075);
+}
+
+html[data-theme="dark"] .seccion_github .repo_api {
+    border-color: #37583b;
+    background: #122016;
+}
+
+html[data-theme="dark"] .proyecto_visual {
+    background: radial-gradient(ellipse at 80% 10%, rgba(166, 255, 54, 0.17), transparent 15rem),
+        repeating-linear-gradient(0deg, transparent 0 22px, rgba(125, 255, 45, 0.032) 22px 23px),
+        linear-gradient(145deg, #101a11, #030704);
+}
+
+html[data-theme="dark"] .proyecto_visual code {
+    color: #b7ff38;
+    text-shadow: 0 0 32px rgba(174, 255, 60, 0.18);
+}
+
+html[data-theme="dark"] .filtros_proyectos button.filtro_activo {
+    background: #b7ff38;
+    color: #11180c;
+    border-color: #b7ff38;
+}
+
+html[data-theme="dark"] .tarjeta_proyecto:hover {
+    border-color: #aaff3e;
+    box-shadow: 0 20px 40px rgba(120, 255, 53, 0.06);
+}
+
+html[data-theme="dark"] .seccion_contacto {
+    background: radial-gradient(ellipse at 15% 20%, rgba(167, 255, 50, 0.11), transparent 27rem),
+        linear-gradient(125deg, #080e08, #112015);
+    border-top-color: #314b30;
+}
+
+html[data-theme="dark"] .formulario_tarjeta {
+    background: #101812;
+}
+
+html[data-theme="dark"] .pie_pagina {
+    background: #060a07;
+    border-color: #233727;
+}
+
+@media (max-width: 767px) {
+    html[data-theme="dark"] .hero {
+        padding-block: 3.6rem 5.1rem;
+    }
+}
