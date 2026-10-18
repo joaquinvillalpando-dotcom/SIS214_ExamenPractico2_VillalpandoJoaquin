@@ -63,6 +63,8 @@
             template_id: templateId,
             user_id: publicKey,
             template_params: {
+                name: datos.nombre,
+                title: datos.motivo,
                 from_name: datos.nombre,
                 reply_to: datos.correo,
                 phone: datos.telefono,
