@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="CV y portafolio de Joaquin Francisco Villalpando Apaza, estudiante de Ingeniería de Sistemas en la UCB.">
+    <meta name="author" content="Joaquin Francisco Villalpando Apaza">
+    <meta name="theme-color" content="#070a09">
+    <title>Joaquin Villalpando | CV & Portafolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/config.js"></script>
+    <script defer src="js/theme.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/projects.js"></script>
+    <script defer src="js/contact.js"></script>
+    <script defer src="js/github.js"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body id="inicio">
+    <a class="saltar_contenido" href="#contenido_principal">Saltar al contenido principal</a>
+
+    <header class="encabezado">
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+            <a class="marca" href="#inicio" aria-label="Ir al inicio">
+                <span class="marca_monograma" aria-hidden="true">JV</span>
+                <span class="marca_texto">
+                    <strong>Joaquin Villalpando</strong>
+                    <small>Ingeniería de Sistemas</small>
+                </span>
+            </a>
+
+            <button
+                class="boton_menu"
+                id="boton_menu"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="menu_principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu_principal" id="menu_principal">
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#trayectoria">Trayectoria</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button
+                class="boton_tema"
+                id="boton_tema"
+                type="button"
+                aria-label="Cambiar a modo claro"
+                aria-pressed="true">
+                <span id="icono_tema" aria-hidden="true">☾</span>
+                <span class="texto_tema" id="texto_tema">Oscuro</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="contenido_principal">
+        <section class="hero seccion" aria-labelledby="titulo_principal">
+            <article class="hero_contenido contenedor">
+                <section class="hero_texto">
+                    <p class="eyebrow">Estudiante de Ingeniería de Sistemas · UCB</p>
+                    <h1 id="titulo_principal">Joaquin Francisco <span>Villalpando Apaza</span></h1>
+                    <p class="hero_bajada">
+                        Construyo soluciones digitales con una base sólida en programación,
+                        bases de datos y desarrollo web.
+                    </p>
+                    <p class="hero_descripcion">
+                        Actualmente curso el cuarto semestre de Ingeniería de Sistemas.
+                        Mi formación está orientada hacia la ingeniería de software,
+                        el diseño de arquitecturas de sistemas y el desarrollo de productos
+                        digitales eficientes y rentables.
+                    </p>
+
+                    <p class="grupo_botones">
+                        <a class="boton boton_primario" href="#proyectos">Ver proyectos</a>
+                        <a class="boton boton_secundario" href="#contacto">Contactarme</a>
+                    </p>
+
+                    <ul class="hero_metricas" aria-label="Resumen del portafolio">
+                        <li><strong>5</strong><span>proyectos académicos</span></li>
+                        <li><strong>7</strong><span>tecnologías principales</span></li>
+                        <li><strong>2</strong><span>idiomas</span></li>
+                    </ul>
+                </section>
+
+                <aside class="hero_visual" aria-label="Presentación profesional">
+                    <figure class="foto_principal_marco">
+                        <img src="assets/images/foto-perfil.png"
+                             alt="Fotografía profesional de Joaquin Francisco Villalpando Apaza"
+                             width="520" height="620">
+                        <figcaption>La Paz, Bolivia</figcaption>
+                    </figure>
+                    <p class="tarjeta_estado">
+                        <span aria-hidden="true"></span>
+                        Disponible para oportunidades académicas
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section class="seccion" id="perfil" aria-labelledby="titulo_perfil">
+            <section class="contenedor rejilla_perfil">
+                <article class="tarjeta tarjeta_principal">
+                    <p class="numero_seccion">01 · Perfil</p>
+                    <h2 id="titulo_perfil">Una base técnica que sigue creciendo</h2>
+                    <p>
+                        Soy estudiante de cuarto semestre de la carrera de
+                        <abbr title="Ingeniería de Sistemas">Ing. de Sistemas</abbr> en la
+                        <abbr title="Universidad Católica Boliviana San Pablo">UCB</abbr>.
+                        Mi formación está orientada hacia la ingeniería de software,
+                        el diseño de arquitecturas de sistemas y el desarrollo de productos
+                        digitales eficientes y rentables.
+                    </p>
+                    <p>
+                        Mi principal objetivo profesional es especializarme en la construcción
+                        y despliegue de plataformas web robustas y escalables, aplicando estándares
+                        de calidad que maximicen el rendimiento del software y el retorno
+                        de inversión en proyectos tecnológicos.
+                    </p>
+
+                    <section class="fortalezas" aria-labelledby="titulo_fortalezas">
+                        <h3 id="titulo_fortalezas">Fortalezas académicas</h3>
+                        <dl>
+                            <div>
+                                <dt>Orientación a resultados</dt>
+                                <dd>Capacidad para alinear requerimientos con soluciones de software eficientes.</dd>
+                            </div>
+                            <div>
+                                <dt>Estructuración limpia</dt>
+                                <dd>Desarrollo enfocado en código mantenible y dependencias justificadas.</dd>
+                            </div>
+                            <div>
+                                <dt>Validación estricta</dt>
+                                <dd>Aplicación de estándares web y controles de calidad en los entregables.</dd>
+                            </div>
+                        </dl>
+                    </section>
+                </article>
+
+                <aside class="tarjeta perfil_resumen" aria-label="Datos de contacto y disponibilidad">
+                    <p class="numero_seccion">En breve</p>
+                    <h2>Datos profesionales</h2>
+                    <address>
+                        <p><span aria-hidden="true">⌖</span> La Paz, Bolivia</p>
+                        <p>
+                            <span aria-hidden="true">✉</span>
+                            <a href="mailto:joaquin.villalpando@ucb.edu.bo">
+                                joaquin.villalpando@ucb.edu.bo
+                            </a>
+                        </p>
+                        <p><span aria-hidden="true">☎</span> <a href="tel:+59162447093">+591 62447093</a></p>
+                    </address>
+                    <label for="medidor_disponibilidad">Disponibilidad actual</label>
+                    <meter
+                        id="medidor_disponibilidad"
+                        min="0"
+                        max="100"
+                        low="30"
+                        high="70"
+                        optimum="90"
+                        value="80">80%</meter>
+                    <p class="cita"><em>“Cada uno es artífice de su propia ventura.”</em></p>
+                </aside>
+            </section>
+        </section>
+
+        <section class="seccion seccion_contraste" id="habilidades" aria-labelledby="titulo_habilidades">
+            <section class="contenedor">
+                <header class="cabecera_seccion">
+                    <div>
+                        <p class="numero_seccion">02 · Habilidades</p>
+                        <h2 id="titulo_habilidades">Tecnologías y herramientas</h2>
+                    </div>
+                    <p>Herramientas, lenguajes y competencias desarrolladas durante mi formación.</p>
+                </header>
+
+                <section class="rejilla_habilidades" aria-label="Habilidades técnicas">
+                    <article class="panel_habilidad">
+                        <h3>Lenguajes y tecnologías</h3>
+                        <ul class="lista_progreso">
+                            <li>
+                                <span>HTML5 nativo y semántica</span>
+                                <progress value="95" max="100">95%</progress>
+                                <strong>95%</strong>
+                            </li>
+                            <li>
+                                <span>CSS3 moderno</span>
+                                <progress value="88" max="100">88%</progress>
+                                <strong>88%</strong>
+                            </li>
+                            <li>
+                                <span>JavaScript ES6+</span>
+                                <progress value="50" max="100">50%</progress>
+                                <strong>50%</strong>
+                            </li>
+                            <li><span>SQL</span><progress value="70" max="100">70%</progress><strong>70%</strong></li>
+                            <li>
+                                <span>Python</span>
+                                <progress value="70" max="100">70%</progress>
+                                <strong>70%</strong>
+                            </li>
+                            <li>
+                                <span>Java</span>
+                                <progress value="70" max="100">70%</progress>
+                                <strong>70%</strong>
+                            </li>
+                            <li><span>C++</span><progress value="50" max="100">50%</progress><strong>50%</strong></li>
+                        </ul>
+                    </article>
+
+                    <article class="panel_habilidad">
+                        <h3>Herramientas de desarrollo</h3>
+                        <ul class="nube_etiquetas">
+                            <li>Visual Studio Code</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>PGAdmin 4</li>
+                            <li>Redgate Data Modeler</li>
+                            <li>Responsively App</li>
+                        </ul>
+                        <h3 class="subtitulo_panel">Habilidades profesionales</h3>
+                        <ul class="lista_checks">
+                            <li>Trabajo en equipo académico multidisciplinario</li>
+                            <li>Resolución sistemática de problemas mediante lógica estructurada</li>
+                            <li>Comprensión y aplicación de especificaciones y estándares técnicos oficiales</li>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section class="seccion" id="proyectos" aria-labelledby="titulo_proyectos">
+            <section class="contenedor">
+                <header class="cabecera_seccion cabecera_proyectos">
+                    <div>
+                        <p class="numero_seccion">03 · Proyectos</p>
+                        <h2 id="titulo_proyectos">Proyectos académicos destacados</h2>
+                    </div>
+                    <p>Explora los proyectos por área o busca una tecnología en particular.</p>
+                </header>
+
+                <section class="controles_proyectos" aria-label="Controles para filtrar proyectos">
+                    <label class="buscador" for="buscador_proyectos">
+                        <span aria-hidden="true">⌕</span>
+                        <span class="sr_only">Buscar proyectos</span>
+                        <input
+                            id="buscador_proyectos"
+                            type="search"
+                            placeholder="Buscar proyecto o tecnología..."
+                            autocomplete="off">
+                    </label>
+                    <div class="filtros_proyectos" id="filtros_proyectos" role="group" aria-label="Filtrar por categoría">
+                        <button type="button" class="filtro_activo" data-filtro="todos" aria-pressed="true">Todos</button>
+                        <button type="button" data-filtro="programacion" aria-pressed="false">Programación</button>
+                        <button type="button" data-filtro="datos" aria-pressed="false">Datos</button>
+                        <button type="button" data-filtro="web" aria-pressed="false">Web</button>
+                    </div>
+                </section>
+
+                <p class="resultado_filtro" id="resultado_filtro" role="status" aria-live="polite"></p>
+                <section class="rejilla_proyectos" id="lista_proyectos" aria-live="polite"></section>
+            </section>
+        </section>
+
+        <section class="seccion seccion_github" id="github" aria-labelledby="titulo_github">
+            <section class="contenedor">
+                <header class="cabecera_seccion">
+                    <div>
+                        <p class="numero_seccion">04 · API REST</p>
+                        <h2 id="titulo_github">GitHub en vivo</h2>
+                    </div>
+                    <p>Información obtenida dinámicamente mediante Fetch API.</p>
+                </header>
+
+                <article class="github_panel" id="github_panel" aria-busy="true">
+                    <section class="estado_api estado_loading" id="github_loading" role="status">
+                        <span class="spinner" aria-hidden="true"></span>
+                        <p>Cargando información pública de GitHub...</p>
+                    </section>
+
+                    <section class="estado_api estado_error" id="github_error" role="alert" hidden>
+                        <h3>No fue posible cargar GitHub</h3>
+                        <p id="github_error_mensaje">Se produjo un error inesperado.</p>
+                        <button
+                            class="boton boton_secundario"
+                            id="reintentar_github"
+                            type="button">Reintentar</button>
+                    </section>
+
+                    <section class="github_contenido" id="github_success" hidden>
+                        <header class="github_perfil">
+                            <img
+                                id="github_avatar"
+                                src="assets/images/foto-perfil.png"
+                                alt="Avatar del perfil de GitHub"
+                                width="96"
+                                height="96">
+                            <div>
+                                <p class="etiqueta_api">GitHub · API pública</p>
+                                <h3 id="github_nombre">Perfil de GitHub</h3>
+                                <p id="github_usuario"></p>
+                            </div>
+                            <a
+                                class="boton boton_secundario"
+                                id="github_enlace"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer">Abrir GitHub</a>
+                        </header>
+
+                        <ul class="github_metricas" aria-label="Estadísticas públicas de GitHub">
+                            <li><strong id="github_repos">0</strong><span>repositorios</span></li>
+                            <li><strong id="github_seguidores">0</strong><span>seguidores</span></li>
+                            <li><strong id="github_siguiendo">0</strong><span>siguiendo</span></li>
+                        </ul>
+
+                        <section aria-labelledby="titulo_repos_api">
+                            <h3 id="titulo_repos_api">Repositorios recientes</h3>
+                            <div class="repos_api" id="github_repos_lista"></div>
+                        </section>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <section class="seccion" id="trayectoria" aria-labelledby="titulo_trayectoria">
+            <section class="contenedor">
+                <header class="cabecera_seccion">
+                    <div>
+                        <p class="numero_seccion">05 · Trayectoria</p>
+                        <h2 id="titulo_trayectoria">Formación y experiencia práctica</h2>
+                    </div>
+                    <p>Formación académica, proyectos de asignatura y aprendizaje aplicado.</p>
+                </header>
+
+                <section class="rejilla_trayectoria">
+                    <article class="tarjeta">
+                        <h3>Formación académica</h3>
+                        <ol class="linea_tiempo">
+                            <li>
+                                <time datetime="2025-02">2025 — presente</time>
+                                <h4>Licenciatura en Ingeniería de Sistemas</h4>
+                                <p>Universidad Católica Boliviana “San Pablo”. Cursando estudios de pregrado.</p>
+                                <p>
+                                    <strong>Logro académico:</strong>
+                                    mantenimiento de un promedio académico alto e íntegro.
+                                </p>
+                            </li>
+                            <li>
+                                <time datetime="2019-02">2019 — 2024</time>
+                                <h4>Bachillerato</h4>
+                                <p>Unidad Educativa Francisco de Miranda “A”.</p>
+                            </li>
+                        </ol>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>Experiencia de aprendizaje práctico</h3>
+                        <ol class="linea_tiempo">
+                            <li>
+                                <time datetime="2026-08">Agosto 2026 — presente</time>
+                                <h4>Desarrollador Web · Tecnologías Web I</h4>
+                                <p>
+                                    Diseño y desarrollo con HTML5, CSS3 y JavaScript,
+                                    formularios validados, diseño adaptable y manipulación del DOM.
+                                </p>
+                            </li>
+                            <li>
+                                <time datetime="2026-02">Febrero — junio 2026</time>
+                                <h4>Diseñador de Base de Datos · Base de Datos I</h4>
+                                <p>
+                                    Modelado entidad-relación, normalización y consultas SQL
+                                    para un sistema orientado al control de inventarios.
+                                </p>
+                            </li>
+                        </ol>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section class="seccion seccion_suave" id="certificaciones" aria-labelledby="titulo_certificaciones">
+            <section class="contenedor">
+                <header class="cabecera_seccion">
+                    <div>
+                        <p class="numero_seccion">06 · Formación complementaria</p>
+                        <h2 id="titulo_certificaciones">Certificaciones, logros e idiomas</h2>
+                    </div>
+                </header>
+
+                <section class="rejilla_certificaciones">
+                    <article class="tarjeta_certificacion">
+                        <p>Google · 2025</p>
+                        <h3>Certificado de Inteligencia Artificial</h3>
+                        <p>
+                            Formación y acreditación en el uso de herramientas de inteligencia artificial
+                            de Google, orientada a tareas de estudio y proyectos personales.
+                        </p>
+                    </article>
+                    <article class="tarjeta_certificacion">
+                        <p>Hack The Box La Paz Bolivia · 20/03/2025</p>
+                        <h3>Participación en Hacking Day 2025</h3>
+                        <p>
+                            Asistencia a cuatro charlas, con una carga de tres horas académicas,
+                            junto a la Carrera de Ingeniería de Telecomunicaciones de la UCB.
+                        </p>
+                    </article>
+                    <article class="tarjeta_certificacion">
+                        <p>UCB Postgrado · 2026</p>
+                        <h3>Curso de Excel para Ingeniería</h3>
+                        <p>
+                            Curso enfocado en cálculo, organización de datos
+                            y análisis aplicado a proyectos de ingeniería.
+                        </p>
+                    </article>
+                    <article class="tarjeta_certificacion tarjeta_logro">
+                        <p>Universidad Católica Boliviana · 2024</p>
+                        <h3>Beca Bachiller de Oro</h3>
+                        <p>Reconocimiento obtenido por el desempeño alcanzado en el examen de admisión.</p>
+                    </article>
+                </section>
+
+                <article class="idiomas_panel">
+                    <h3>Idiomas</h3>
+                    <div class="idioma">
+                        <span>Español</span><meter min="0" max="100" value="100">100%</meter><strong>Nativo</strong>
+                    </div>
+                    <div class="idioma">
+                        <span>Inglés</span><meter min="0" max="100" value="85">85%</meter><strong>Avanzado</strong>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="seccion" id="multimedia" aria-labelledby="titulo_multimedia">
+            <section class="contenedor">
+                <header class="cabecera_seccion">
+                    <div>
+                        <p class="numero_seccion">07 · Multimedia</p>
+                        <h2 id="titulo_multimedia">Presentación multimedia</h2>
+                    </div>
+                    <p>Una forma distinta de conocer mi recorrido y mis intereses.</p>
+                </header>
+
+                <section class="rejilla_multimedia" aria-label="Contenido audiovisual">
+                    <figure class="tarjeta_media tarjeta_video">
+                        <video controls poster="assets/images/poster.png" preload="metadata">
+                            <source src="assets/video/video-hoja-vida.mp4" type="video/mp4">
+                            <source src="assets/video/video-hoja-vida.webm" type="video/webm">
+                            Su navegador no soporta video HTML5.
+                        </video>
+                        <figcaption>Demostración audiovisual de proyectos web</figcaption>
+                    </figure>
+                    <figure class="tarjeta_media tarjeta_audio">
+                        <figcaption>Presentación personal en audio</figcaption>
+                        <p>Escucha mi presentación en formato audio.</p>
+                        <audio controls preload="metadata" aria-label="Reproducir presentación personal">
+                            <source src="assets/audio/presentacion_personal.ogg" type="audio/ogg">
+                            <source src="assets/audio/presentacion_personal.mp3" type="audio/mpeg">
+                            Su navegador no soporta audio HTML5.
+                        </audio>
+                    </figure>
+                </section>
+            </section>
+        </section>
+
+        <section class="seccion seccion_contacto" id="contacto" aria-labelledby="titulo_contacto">
+            <section class="contenedor contacto_layout">
+                <article class="contacto_intro">
+                    <p class="numero_seccion">08 · Contacto</p>
+                    <h2 id="titulo_contacto">Conversemos</h2>
+                    <p>
+                        Déjame un mensaje. El formulario comprueba los datos antes del envío
+                        y utiliza EmailJS cuando está configurado.
+                    </p>
+                    <address>
+                        <a href="mailto:joaquin.villalpando@ucb.edu.bo">joaquin.villalpando@ucb.edu.bo</a>
+                        <a href="tel:+59162447093">+591 62447093</a>
+                    </address>
+                </article>
+
+                <article class="tarjeta formulario_tarjeta">
+                    <div
+                        class="mensaje_formulario"
+                        id="mensaje_formulario"
+                        role="status"
+                        aria-live="polite"
+                        hidden></div>
+                    <form id="formulario_contacto" novalidate aria-describedby="nota_envio">
+                        <p class="nota_envio" id="nota_envio">
+                            Si el envío aún no está habilitado, puedes escribirme al correo indicado.
+                        </p>
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+                            <label for="txt_nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                            <input type="text" id="txt_nombre" name="nombre"
+                                   required minlength="4" maxlength="80"
+                                   pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"
+                                   autocomplete="name" aria-describedby="error_nombre">
+                            <small class="texto_error" id="error_nombre"></small>
+
+                            <label for="txt_correo">Correo electrónico <span aria-hidden="true">*</span></label>
+                            <input
+                                type="email"
+                                id="txt_correo"
+                                name="correo"
+                                required
+                                autocomplete="email"
+                                aria-describedby="error_correo">
+                            <small class="texto_error" id="error_correo"></small>
+
+                            <label for="txt_telefono">Teléfono <span aria-hidden="true">*</span></label>
+                            <input type="tel" id="txt_telefono" name="telefono"
+                                   required pattern="(\+591|591)?[67][0-9]{7}"
+                                   placeholder="Ej. 70000000" autocomplete="tel"
+                                   aria-describedby="error_telefono">
+                            <small class="texto_error" id="error_telefono"></small>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Mensaje</legend>
+                            <label for="txt_motivo">Motivo <span aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="txt_motivo"
+                                name="motivo"
+                                required
+                                list="motivos_contacto"
+                                aria-describedby="error_motivo">
+                            <datalist id="motivos_contacto">
+                                <option value="Colaboración en proyectos"></option>
+                                <option value="Oportunidades de pasantía"></option>
+                                <option value="Consultas técnicas de código"></option>
+                                <option value="Otros temas profesionales"></option>
+                            </datalist>
+                            <small class="texto_error" id="error_motivo"></small>
+
+                            <label for="txt_mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                            <textarea id="txt_mensaje" name="mensaje" rows="5"
+                                      required minlength="10" maxlength="500"
+                                      aria-describedby="contador_mensaje error_mensaje"></textarea>
+                            <span class="contador" id="contador_mensaje">0 / 500</span>
+                            <small class="texto_error" id="error_mensaje"></small>
+                        </fieldset>
+
+                        <label class="campo_check" for="chk_aceptacion">
+                            <input
+                                type="checkbox"
+                                id="chk_aceptacion"
+                                name="aceptacion"
+                                required
+                                aria-describedby="error_aceptacion">
+                            <span>Consiento el procesamiento de mis datos de contacto.</span>
+                        </label>
+                        <small class="texto_error" id="error_aceptacion"></small>
+
+                        <button
+                            class="boton boton_primario boton_enviar"
+                            id="boton_enviar"
+                            type="submit">Enviar mensaje</button>
+                    </form>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="pie_pagina">
+        <section class="contenedor pie_contenido">
+            <div>
+                <strong>Joaquin Villalpando</strong>
+                <p>Estudiante de Ingeniería de Sistemas · Tecnologías Web I</p>
+            </div>
+            <nav aria-label="Navegación secundaria">
+                <a href="#inicio">Inicio</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>
