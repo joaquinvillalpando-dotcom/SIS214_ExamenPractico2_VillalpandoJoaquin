@@ -59,7 +59,7 @@
             categoria: 'web',
             categoriaTexto: 'Desarrollo web',
             descripcion: [
-                'Hoja de vida interactiva y multipágina desarrollada',
+                'Hoja de vida interactiva tipo landing page desarrollada',
                 'para la asignatura Tecnologías Web I.'
             ].join(' '),
             tecnologias: Object.freeze(['HTML5', 'CSS3', 'JavaScript']),
